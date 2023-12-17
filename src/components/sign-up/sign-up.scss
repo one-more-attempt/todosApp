@@ -1,0 +1,23 @@
+.sign-up {
+    margin: 30px auto;
+    width: 80%;
+
+    h1 {
+        text-align: center;
+    }
+
+    &__btn {
+        display: block;
+        margin: 30px auto;
+        width: 20%;
+        height: 40px;
+    }
+
+    div {
+        margin: 40px auto;
+    }
+}
+
+.sign-up p {
+    text-align: center;
+}

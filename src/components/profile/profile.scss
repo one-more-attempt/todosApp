@@ -1,0 +1,27 @@
+.profile {
+    @include flex(row, center, space-around);
+    padding: 50px;
+
+    &__photo {
+        @include size(300px, 300px);
+        @include border(2px, solid, $primary, 10px);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__info {
+        width: 50%;
+
+        &__btns {
+            button {
+                &:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}

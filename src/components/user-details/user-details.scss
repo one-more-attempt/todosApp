@@ -1,0 +1,77 @@
+.user-details {
+    display: none;
+
+    &__info {
+        @include flex(row, center, space-around);
+        padding: 15px;
+
+        &__photo {
+            @include size(300px, 300px);
+            @include border(2px, solid, $primary, 10px);
+            overflow: hidden;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        &__data {
+            @include size(50%, 300px);
+            margin-left: 20px;
+            padding: 15px;
+
+            div {
+                span {
+                    &:first-child {
+                        font-weight: bold;
+                        text-decoration: underline;
+                    }
+
+                    &:last-child, &:first-child {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__todos, 
+    &__todos__todo {
+        @include size(90%);
+        @include border(1px, solid, $primary, 5px);
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    &__todos {
+        margin-bottom: 100px;
+
+        &__todo {
+            p {
+                word-wrap: break-word;
+
+                &:first-child {
+                    font-weight: bold;
+                    font-size: 24px;
+                    margin: 0;
+                }
+            }
+
+            span {
+                display: inline-block;
+                margin-bottom: 15px;
+                color: $gray;
+            }
+
+            &__comment {
+                width: 100%;
+                margin: 0 auto;
+    
+                textarea {
+                    margin-bottom: 15px;
+                }
+            }
+
+        }
+    }
+}

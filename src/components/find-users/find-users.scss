@@ -1,0 +1,35 @@
+.find-users {
+    .form-floating {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    &__header {
+        @include flex();
+
+        &__first-name,
+        &__last-name,
+        &__email,
+        &__id {
+            @include size(20%, 50px);
+
+            p {
+                text-align: center;
+                cursor: pointer;
+            }
+
+            div {
+                @include border(1px, solid, black);
+                @include flex();
+                height: 50px;
+
+                p {
+                    font-weight: bold;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+
+    }
+}

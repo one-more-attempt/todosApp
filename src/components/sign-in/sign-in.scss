@@ -1,0 +1,19 @@
+.sign-in {
+    margin: 30px auto;
+    width: 80%;
+
+    h1 {
+        text-align: center;
+    }
+
+    &__btn {
+        display: block;
+        margin: 30px auto;
+        width: 20%;
+        height: 40px;
+    }
+}
+
+.sign-in p {
+    text-align: center;
+}
