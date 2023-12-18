@@ -9,6 +9,7 @@ export class Header {
     static getHeader(place) {
       if (Object.values(getUserLocal()).length) {
         const { firstName, lastName, email, photo } = getUserLocal();
+        console.log(getUserLocal());
         const header = document.createElement('div');
         const headerLogo = document.createElement('div');
         const headerTitle = document.createElement('div');
