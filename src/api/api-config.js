@@ -11,4 +11,4 @@ export const FIREBASE_CONFIG = {
 
 Object.freeze(FIREBASE_CONFIG);
 
-export const DB_URL = FIREBASE_CONFIG.databaseURL;
+export const DB_URL = "https://testproject-a897f-default-rtdb.firebaseio.com";
